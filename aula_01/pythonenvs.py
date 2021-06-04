@@ -1,4 +1,3 @@
-
 def jogoTrivia():
     x:str = input("Digite seu primero numero: ")
     y:int =  0
@@ -49,8 +48,24 @@ def fatorial():
 
 
 fatorial()
+        
+# Faça um programa que dado um numero lido a partir do teclado. Calcula a soma dos digitos 
+# (independentemente dos numero de digitos)
 
-            
 
 
+
+def SomaDigitos() -> int:
+    numero_string = input("Digite um numero: ")
+    numero = int(numero_string)
+    sumatoria = 0
+    
+    for n in range(0,numero):
+        PrimerDigito = numero % 10
+        numero = numero // 10
+        sumatoria = sumatoria + PrimerDigito
+    
+    return print(sumatoria)    
+
+SomaDigitos()
 
