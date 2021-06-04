@@ -27,5 +27,30 @@ jogoTrivia()
 
 
 
+# Construa uma função fat que recebe um numero inteiro positivo como argumento e 
+# devolve o fatorial desse número.
+
+def fatorial():
+    x:str = input("Digite um numero: ")
+    numero:int = 0
+    resultado:int = 1
+    if x.isnumeric():
+        numero = int(x)
+    else:
+        while x.isnumeric() == False:
+            x = input("Digite por favor solo datos numericos:")
+        numero = int(x)
+
+
+    for n in range(0,numero):
+        resultado = resultado * (n+1)
+
+    return print(resultado)    
+
+
+fatorial()
+
+            
+
 
 
