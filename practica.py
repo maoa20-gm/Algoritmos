@@ -1,0 +1,36 @@
+import turtle
+
+Oreo = turtle.Turtle()
+Oreo.color("black")
+Oreo.forward(100)
+Oreo.right(90)
+Oreo.forward(100)
+Oreo.right(90)
+Oreo.forward(100)
+
+Missu = turtle.Turtle()
+Missu.color("brown")
+Missu.left(180)
+Missu.forward(100)
+Missu.left(90)
+Missu.forward(100)
+Missu.left(90)
+Missu.forward(100)
+
+
+Tobey_pato = turtle.Turtle()
+Tobey_pato.color("yellow")
+Tobey_pato.left(90)
+Tobey_pato.forward(20)
+Tobey_pato.left(90)
+Tobey_pato.forward(120)
+Tobey_pato.left(90)
+Tobey_pato.forward(220)
+Tobey_pato.left(90)
+Tobey_pato.forward(120)
+Tobey_pato.left(90)
+Tobey_pato.forward(100)
+
+Smaug = turtle.Turtle()
+Smaug.right(90)
+Smaug.forward(100)

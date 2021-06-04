@@ -1,0 +1,55 @@
+def jogoTrivia():
+    x = int(input("Digite seu primero numero: "))
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+
+    
+    for n in range (3):
+        y = int(input("Adivine el numero del primer jugador: "))
+        if x > y:
+            print("Su numero es menor que el del primer jugador")
+        elif x < y:
+            print("Su numero es mayor que el del primer jugador")
+        elif x == y:
+            print("Correcto, usted adivino el numero")
+            break
+
+jogoTrivia()
+            
