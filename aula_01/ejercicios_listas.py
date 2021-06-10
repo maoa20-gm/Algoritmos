@@ -1,3 +1,5 @@
+from typing import List
+
 # Crie uma função que recebe uma lista de números como argumento e 
 # devolve uma lista onde todos os números da lista original foram
 # elevados ao quadrado.
@@ -117,18 +119,69 @@ l2 = [5,2,7]
 
 print(diferencaListas(l1,l2))
 
+# Ejemplo de incluir las palabras en una lista
+
+def partir(texto:str, separador:str) -> List[str]:
+    if len(separador) != 1:
+        return []
+
+    palavra = ""
+    resultado:List[str] = []    
+
+
+    for c in texto:
+        if c != separador:
+            palavra = palavra + c
+        else:
+            if palavra != "": # Para evitar colocar strings vacios al comienzo de la oracion
+                resultado.append(palavra)
+                palavra = ""
+
+    if palavra != "":
+        resultado.append(palavra)
+
+    return resultado    
+
+
+print(partir(" Eu sou Pythonista e Fashionista", " ")) 
 
 
 
+# Hacer para mas de un separador
+
+def partirTudo(texto:str, separador:str) -> List[str]:
+    if len(separador) < 1:
+        return []
+
+    palavra = ""
+    resultado:List[str] = []    
 
 
+    for c in texto:
+        if not ehSeparador(c, separador):
+            palavra = palavra + c
+        else:
+            if palavra != "": # Para evitar colocar strings vacios al comienzo de la oracion
+                resultado.append(palavra)
+                palavra = ""
+
+    if palavra != "":
+        resultado.append(palavra)
+
+    return resultado    
 
 
+def ehSeparador(c , separador):
+    if len(separador) == 0:
+        return False
 
+    resultado = False
+    i = 0
+    while i < len(separador) and (resultado == False):
+        if c == separador[i]:
+            resultado = True
+        i = i + 1
+    return resultado    
 
-
-
-
-
-
+print(partirTudo("Eu sou_Miguel Ortiz-vou trabalhar por voces   ", " _-"))
 
